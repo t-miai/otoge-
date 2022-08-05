@@ -9,7 +9,7 @@ public class Judge : MonoBehaviour
     [SerializeField] NotesManager notesManager;//スクリプト「NotesManager」を入れる変数
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))//〇キーが押されたとき
+        if (Input.GetKeyDown(KeyCode.A))//〇キーが押されたとき
         {
             if (notesManager.LaneNum[0] == 0)//押されたボタンはレーンの番号とあっているか？
             {
@@ -20,23 +20,51 @@ public class Judge : MonoBehaviour
                 */
             }
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             if (notesManager.LaneNum[0] == 1)
             {
                 Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
             }
         }
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             if (notesManager.LaneNum[0] == 2)
             {
                 Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
             }
         }
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (notesManager.LaneNum[0] == 3)
+            {
+                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            if (notesManager.LaneNum[0] == 4)
+            {
+                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (notesManager.LaneNum[0] == 5)
+            {
+                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (notesManager.LaneNum[0] == 6)
+            {
+                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (notesManager.LaneNum[0] == 7)
             {
                 Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
             }
