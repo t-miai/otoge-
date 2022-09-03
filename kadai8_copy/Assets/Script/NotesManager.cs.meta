@@ -3,7 +3,39 @@ guid: 0e41f9bdc139649298e7c8e604a0ebf8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - noteObj: {instanceID: 0}
+  - noteObj2: {fileID: 4980250730260180750, guid: bfa66969a71e844129a34e48042ea2ac, type: 3}
+  - noteObj3: {instanceID: 0}
+  - noteObj4: {instanceID: 0}
+  - noteObj5: {instanceID: 0}
+  - noteObj6: {instanceID: 0}
+  - noteObj7: {instanceID: 0}
+  - noteObj8: {instanceID: 0}
+  - noteObj9: {instanceID: 0}
+  - noteObj10: {instanceID: 0}
+  - noteObj11: {instanceID: 0}
+  - noteObj12: {fileID: 1920565858060678735, guid: e0b47ffce5c724f73ad6d7fa87223f90, type: 3}
+  - noteObj13: {instanceID: 0}
+  - noteObj14: {instanceID: 0}
+  - noteObj15: {instanceID: 0}
+  - noteObj16: {fileID: 5365693724384571058, guid: 74f873e235b3f466da559893f8da0443, type: 3}
+  - noteObj17: {instanceID: 0}
+  - noteObj18: {instanceID: 0}
+  - noteObj19: {instanceID: 0}
+  - noteObj20: {instanceID: 0}
+  - noteObj21: {instanceID: 0}
+  - noteObj22: {instanceID: 0}
+  - noteObj23: {instanceID: 0}
+  - noteObj24: {instanceID: 0}
+  - noteObj25: {instanceID: 0}
+  - noteObj26: {instanceID: 0}
+  - noteObj27: {instanceID: 0}
+  - noteObj28: {fileID: 4840958840948376509, guid: 7cd58b6bad1b14d6d875b93fc76a4e20, type: 3}
+  - noteObj29: {instanceID: 0}
+  - noteObj30: {instanceID: 0}
+  - noteObj31: {instanceID: 0}
+  - noteObj32: {fileID: 8667816608446055425, guid: 2487018c244474b79bf221e1a7912553, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
