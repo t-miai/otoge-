@@ -78,7 +78,7 @@ public class NotesManager : MonoBehaviour
     void OnEnable()
     {
         noteNum = 0;
-        songName = "goforit_level6";//Jsonファイルの名前
+        songName = "Makeyouhappy_level3";//Jsonファイルの名前
         Load(songName);
     }
 
@@ -139,9 +139,9 @@ public class NotesManager : MonoBehaviour
             }else if(inputJson.notes[i].type==18){
                 NotesObj.Add(Instantiate(noteObj18, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
             }else if(inputJson.notes[i].type==19){
-                NotesObj.Add(Instantiate(noteObj9, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
+                NotesObj.Add(Instantiate(noteObj19, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
             }else if(inputJson.notes[i].type==20){
-                NotesObj.Add(Instantiate(noteObj10, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
+                NotesObj.Add(Instantiate(noteObj20, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
             }else if(inputJson.notes[i].type==21){
                 NotesObj.Add(Instantiate(noteObj21, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
             }else if(inputJson.notes[i].type==22){
@@ -186,8 +186,7 @@ public class NotesManager : MonoBehaviour
                 NotesObj.Add(Instantiate(noteObj41, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
             }else{
                 NotesObj.Add(Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));//ノーツを生成
-            }
-            
+            }  
         }
     }
 }
