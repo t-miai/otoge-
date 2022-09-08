@@ -12,7 +12,7 @@ public class Notes : MonoBehaviour//MonoBehaviourを継承
         rb.constraints = RigidbodyConstraints.FreezePositionY;
         
     }*/
-    int NoteSpeed=8;
+    int NoteSpeed=4;
     // Update is called once per frame
     void Update()
     {
