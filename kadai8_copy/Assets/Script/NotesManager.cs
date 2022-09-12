@@ -78,7 +78,7 @@ public class NotesManager : MonoBehaviour
     void OnEnable()
     {
         noteNum = 0;
-        songName = "Makeyouhappy_level3";//Jsonファイルの名前
+        songName = "Makeyouhappy_level6";//Jsonファイルの名前
         Load(songName);
     }
 
