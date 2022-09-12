@@ -1404,7 +1404,7 @@ MonoBehaviour:
   NoteType: 
   NotesTime: []
   NotesObj: []
-  NotesSpeed: 8
+  NotesSpeed: 7
   noteObj: {fileID: 6651175969531024181, guid: 22b1cc6b7606e4646a1a1bdb0773effd, type: 3}
   noteObj2: {fileID: 6722255375910961004, guid: e950883232b7f4e1f952eb4f29ed01e0, type: 3}
   noteObj3: {fileID: 1724534710452479718, guid: 6d6aa76e013454dfc8ec849d158c02c5, type: 3}
