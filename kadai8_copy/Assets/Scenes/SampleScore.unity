@@ -1277,8 +1277,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9
-  m_fontSizeBase: 9
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1344,7 +1344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 5}
+  m_AnchoredPosition: {x: 30, y: 30}
   m_SizeDelta: {x: 20, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1073612589
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   NoteType: 
   NotesTime: []
   NotesObj: []
-  NotesSpeed: 8
+  NotesSpeed: 5
   noteObj: {fileID: 6651175969531024181, guid: 22b1cc6b7606e4646a1a1bdb0773effd, type: 3}
   noteObj2: {fileID: 6722255375910961004, guid: e950883232b7f4e1f952eb4f29ed01e0, type: 3}
   noteObj3: {fileID: 1724534710452479718, guid: 6d6aa76e013454dfc8ec849d158c02c5, type: 3}
@@ -2664,6 +2664,7 @@ MonoBehaviour:
   - {fileID: 7408987809767383776, guid: b8e551a1cfaa94896b40d700bbe856da, type: 3}
   notesManager: {fileID: 1371486100}
   ScoreText: {fileID: 1041400432}
+  totalTime: 60
 --- !u!4 &2021196801
 Transform:
   m_ObjectHideFlags: 0

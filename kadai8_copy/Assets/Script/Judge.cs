@@ -10,8 +10,13 @@ public class Judge : MonoBehaviour
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「NotesManager」を入れる変数
     [SerializeField] private TMP_Text ScoreText;
+    public float totalTime;
+    int score;
     void Update()
     {
+        totalTime -= Time.deltaTime;
+        seconds = (int)totalTime;
+        ScoreText.text = seconds.ToString();
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (notesManager.LaneNum[0] == 0 && notesManager.NoteType[0] == 2)
