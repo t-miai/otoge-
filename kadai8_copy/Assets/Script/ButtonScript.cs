@@ -8,6 +8,6 @@ public class ButtonScript : MonoBehaviour
 {
     public void OnClick(){
         Debug.Log("押された！");
-        SceneManager.LoadScene ("SampleScene");
+        SceneManager.LoadScene ("Level1");
     }
 }
