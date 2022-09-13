@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Judge : MonoBehaviour
 {
     //変数の宣言
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「NotesManager」を入れる変数
+    [SerializeField] private TMP_Text ScoreText;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
