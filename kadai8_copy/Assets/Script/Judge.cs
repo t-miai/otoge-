@@ -10,13 +10,12 @@ public class Judge : MonoBehaviour
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「NotesManager」を入れる変数
     [SerializeField] private TMP_Text ScoreText;
-    public float totalTime;
+    [SerializeField] private TMP_Text ComboText;
     int score;
+    int combo;
     void Update()
     {
-        totalTime -= Time.deltaTime;
-        seconds = (int)totalTime;
-        ScoreText.text = seconds.ToString();
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (notesManager.LaneNum[0] == 0 && notesManager.NoteType[0] == 2)
@@ -305,6 +304,7 @@ public class Judge : MonoBehaviour
         if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
         {
             message(3);
+            ScoreCombo(0);
             deleteData();
             Debug.Log("miss");
             //ミス
@@ -315,6 +315,7 @@ public class Judge : MonoBehaviour
         if (timeLag <= 0.10)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.1秒以下だったら
         {
             Debug.Log("perfect");
+            ScoreCombo(50);
             message(0);
             deleteData();
         }
@@ -323,6 +324,7 @@ public class Judge : MonoBehaviour
             if (timeLag <= 0.15)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.15秒以下だったら
             {
                 Debug.Log("great");
+                ScoreCombo(25);
                 message(1);
                 deleteData();
             }
@@ -331,12 +333,34 @@ public class Judge : MonoBehaviour
                 if (timeLag <= 0.20)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.2秒以下だったら
                 {
                     Debug.Log("bad");
+                    ScoreCombo(10);
                     message(2);
                     deleteData();
                 }
             }
         }
     }
+    void ScoreCombo(int up)
+    {
+        if(up == 50 || up == 25){
+            combo = combo +1;
+            if(combo >= 15 || combo < 30){
+                up = up * 2;
+            }else if(combo < 50){
+                up = up * 3;
+            }else if(combo < 70){
+                up = up * 4;
+            }else if(combo >= 70){
+                up = up * 5;
+            }
+        }else{
+            combo = 0;
+        }
+        score = score + up;
+        ScoreText.text = score.ToString();
+        ComboText.text = combo.ToString();
+    }
+
     float GetABS(float num)//引数の絶対値を返す関数
     {
         if (num >= 0)
