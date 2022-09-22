@@ -1483,7 +1483,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -250, y: 100}
-  m_SizeDelta: {x: 100, y: 10}
+  m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1073612589
 GameObject:
@@ -1913,7 +1913,7 @@ MonoBehaviour:
   NoteType: 
   NotesTime: []
   NotesObj: []
-  NotesSpeed: 5
+  NotesSpeed: 8
   noteObj: {fileID: 6651175969531024181, guid: 22b1cc6b7606e4646a1a1bdb0773effd, type: 3}
   noteObj2: {fileID: 6722255375910961004, guid: e950883232b7f4e1f952eb4f29ed01e0, type: 3}
   noteObj3: {fileID: 1724534710452479718, guid: 6d6aa76e013454dfc8ec849d158c02c5, type: 3}
@@ -2930,7 +2930,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9c21644f7aba149b6a994a9029bbe385, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 921fbea556f32443aab3299492add39e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

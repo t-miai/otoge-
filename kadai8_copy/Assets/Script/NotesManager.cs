@@ -78,7 +78,7 @@ public class NotesManager : MonoBehaviour
     void OnEnable()
     {
         noteNum = 0;
-        songName = "Makeyouhappy_level3";//Jsonファイルの名前
+        songName = "MarryYou";//Jsonファイルの名前
         Load(songName);
     }
 
@@ -98,7 +98,7 @@ public class NotesManager : MonoBehaviour
             float kankaku = 60 / (inputJson.BPM * (float)inputJson.notes[i].LPB);//一小節の長さ
             //括弧内：1分間に何個のノーツがあるか、なぜそれで60を割るのかは不明（聞いてみる）
             float beatSec = kankaku * (float)inputJson.notes[i].LPB;//ノーツ間の長さ
-            float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset + 0.01f;//ノーツの降ってくる時間
+            float time = (beatSec * (float)inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset + 0.01f;//ノーツの降ってくる時間
             NotesTime.Add(time);//リストに追加
             LaneNum.Add(inputJson.notes[i].block);//リストに追加
             NoteType.Add(inputJson.notes[i].type);//リストに追加
